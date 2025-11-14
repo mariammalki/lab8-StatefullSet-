@@ -13,7 +13,10 @@ Le web app reste inchangé et se connecte via un service interne (`db-service`).
 ## 📂 Structure des dossiers
 
 lab8/
-├
+├── app/
+│   ├── app.py
+│   ├── templates/
+│   └── requirements.tx
 ├── k8s/
 │ ├── configmap.yaml
 │ ├── secret.yaml
@@ -22,6 +25,7 @@ lab8/
 │ ├── postgres-statefulset.yaml
 │ ├── web.yaml
 │ └── namespace.yaml
+│__docs
 └── README.md
 
 ## ⚙️ Déploiement
@@ -67,6 +71,7 @@ CREATE TABLE IF NOT EXISTS users (
 NodePort : http://<IP_node>:30080
 
 Le formulaire permet d’insérer et de lister les utilisateurs.
+![Formulaire](docs/screenshots/test-lab8.png)
 
 4. Tester persistance
 
