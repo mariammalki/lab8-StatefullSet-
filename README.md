@@ -89,5 +89,6 @@ SELECT * FROM users;
 
 Les données doivent toujours exister, confirmant la persistance via PVC.
 
-Accès à l’application web
+![Formulaire](docs/screenshots/test-lab8-persistance.png)
+
 
